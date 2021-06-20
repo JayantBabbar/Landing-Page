@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: bisque;
+}
+#header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px 18px 24px;
+  background-color: #fafafa;
+  border-bottom: 1px solid rgb(63, 55, 55);
+}
+
+/* now staring Hamburger icon */
+#menu {
+  display: none;
+}
+
+.menu-line {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background-color: black;
+  margin: 6px 0;
+  transition: all 0.3s ease-in-out;
+  transform-origin: 6px 3px;
+}
+
+/* Rotate first bar */
+.change #bar1 {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(-8px, 12px);
+}
+
+/* Fade out the second bar */
+.change #bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change #bar3 {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) translate(-8px, -11px);
+}
+
+/* Nav Options */
+.nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  text-transform: uppercase;
+  color: #1c2022;
+  margin-right: 15px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2.5px;
+  left: 0;
+  right: 0;
+  background: rgba(122, 5, 5, 0.596);
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+#btn-login {
+  font-size: 16px;
+  font-family: "Heebo", sans-serif;
+  background-color: rgb(8, 8, 8);
+  color: rgb(255, 255, 255);
+
+  border-radius: 18px;
+  border: none;
+  padding: 8px 20px 8px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+#btn-login:hover {
+  transform: scale(1, 1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.548);
+}
+#btn-login:focus {
+  outline: none;
+}
+
+.super {
+  background: linear-gradient(to left, #004e92, #000428);
+  height: 400px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px 0 100px;
+
+}
+
+.img-super{
+    overflow:hidden;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins" , sans-serif;
+    margin-right: 100px;
+
+}
+.newsletter h1,p{
+    margin: 5px 0 5px 0;
+}
+
+
+#form{
+    font-family: "Poppins" , sans-serif;
+    margin: 13px 0px 13px 0;
+}
+
+#email{
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+}
+
+#email:focus{
+    outline: none;
+}
+
+#submit{
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    margin-left: 8px;
+    width:19%;
+    background-color: #008ed5;;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+    
+}
+ #submit:hover{
+    background-color: #199fe2;
+    transform: matrix(1,0,0,1,0,0);
+ }
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 54rem) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav--links {
+    background-color: #fafafa;
+    position: absolute;
+    margin: 10px;
+    height: 450px;
+    display: flex;
+    border-radius: 12px;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+    top: 60px;
+    line-height: 3rem;
+    right: 0;
+    left: 0;
+    transition: transform 0.5s ease-in;
+    transform: translateX(110%);
+  }
+
+  .nav-link::after {
+    background: none;
+  }
+
+  .nav-link:first-child {
+    margin-top: 18px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    margin-bottom: 18px;
+    padding: 8px 20px 8px 20px;
+  }
+
+  #btn-login {
+    padding: 1px;
+    border-radius: 10px;
+    margin-left: 15px;
+    text-align: center;
+    width: 90px;
+  }
+
+  #menu {
+    display: block;
+  }
+ 
+.super{
+    text-align: center;
+    
+}
+
+.newsletter{
+  margin: 50px;
+}
+  
+  #form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #submit{
+      margin-top: 8px;
+      margin-left: 0;
+  }
+
+
+.img-super{
+    display: none;
+}
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
