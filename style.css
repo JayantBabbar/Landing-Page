@@ -167,6 +167,11 @@ p {
   font-size: 30px;
 }
 
+.camp-card a:first-child img{
+  width: 280px;
+  height: 200px;
+}
+
 #container{
   display: flex;
   align-content: center;
@@ -182,7 +187,7 @@ p {
   border-radius: 5px;
   font-family: system-ui , "Poppins", sans-serif;
   margin-bottom: 30px;
-  background-color: rgba(187, 230, 243, 0.438);
+  background-color: rgba(243, 250, 252, 0.438);
   transition: all 0.3s ease-in-out;
 }
 
@@ -204,6 +209,28 @@ p {
     color: rgb(41, 40, 40);
     font-weight: 500;
 }
+
+.Check-details{
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  background-color: #e44d12dc;
+ 
+  font-family: "Poppins",sans-serif;
+  transition: all 0.1s ease-in-out;
+}
+
+.Check-details:hover{
+  box-shadow: 3px 2px 0.4rem rgba(39, 108, 117, 0.514);
+}
+
+
+
+
+
 
 .card-header ul{
   list-style-type: none;
