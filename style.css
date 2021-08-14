@@ -6,19 +6,21 @@
 }
 
 body {
-  background-color: #fdfdfd;
+  background-color: #f5f9ff;
 
 }
 
 
 #header {
-  position: relative;
+  position: sticky;
+  top:0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 18px 24px 18px 24px;
-  background-color: #fafafa;
-  border-bottom: 1px solid rgb(63, 55, 55);
+  background-color: #ffffff;
+  z-index: 1000;
+
 }
 
 /* now staring Hamburger icon */
@@ -189,7 +191,7 @@ p {
   border-radius: 5px;
   font-family: system-ui , "Poppins", sans-serif;
   margin-bottom: 30px;
-  background-color: rgb(246, 245, 250);
+  background-color: rgb(255, 255, 255);
   transition: all 0.3s ease-in-out;
 }
 
@@ -351,7 +353,7 @@ p {
 
 footer {
   margin-top: 50px;
-  background-color: rgb(102, 0, 0);
+  background-color: #ac0909;
   padding: 10px;
   color: #fafafa;
   font-family: "poppins";
