@@ -16,16 +16,16 @@
   </head>
   <body>
     <header id="header">
-      <img src="./logo-desktop.svg" alt="" srcset="" />
+      <img src="./logo-desktop.svg" id="header-img" alt="" srcset="" />
       <div id="menu">
         <span id="bar1" class="menu-line"></span>
         <span id="bar2" class="menu-line"></span>
         <span id="bar3" class="menu-line"></span>
       </div>
-      <nav id="nav-links" class="nav--links">
+      <nav id="nav-bar" class="nav--links">
         <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Challenges</a>
-        <a href="#" class="nav-link">Solutions</a>
+        <a href="#" class="nav-link">Bootcamps</a>
+        <a href="#" class="nav-link">YT Videos</a>
         <a href="#" class="nav-link">Resources</a>
         <a href="#" id="btn-login" class="nav-btn"> Login </a>
       </nav>
@@ -39,13 +39,12 @@
           ShrewdLearner as well as free tips and tutorials.
         </p>
         <form
-          action="mailto:https://www.freecodecamp.com/email-submit"
-          method="POST"
+          action="https://www.freecodecamp.com/email-submit"
           enctype="multipart/form-data"
           id="form"
         >
-          <input type="email" id="email" placeholder="E-mail" />
-          <button class="btn-news" id="submit">Join Now</button>
+          <input type="email" id="email" name="email" placeholder="E-mail" />
+          <input type="submit" class="btn-news" id="submit" value="Join Now" />
         </form>
         <p>You're signing up to receive emails from ShrewdLearner</p>
       </div>
@@ -105,7 +104,6 @@
             <div class="card-header">
               <ul>
                 <li>Python</li>
-               
               </ul>
             </div>
             <p>
@@ -139,6 +137,25 @@
         </div>
       </div>
     </section>
+
+    <section class="Videos">
+      <h1 id="sec-head">YT Videos</h1>
+      <iframe
+        id = "video"
+        height="420"
+        width="820"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+        frameborder="0"
+        allowfullscreen
+      >
+      </iframe>
+    </section>
+
+    <footer>
+      <ul>
+      <p>Copyright 2020, ShrewdLearner</p>
+    </footer>
     <script src="app.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

@@ -2,7 +2,7 @@
 
 const navSlide = ()=>{
 
-const navVisible = document.querySelector("#nav-links");
+const navVisible = document.querySelector("#nav-bar");
 const menu = document.querySelector('#menu');
 
 menu.addEventListener('click', () => {
@@ -12,6 +12,9 @@ menu.addEventListener('click', () => {
 }
 
 navSlide();
+
+
+
 
     
 
